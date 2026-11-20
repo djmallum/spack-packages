@@ -262,6 +262,8 @@ class Gdal(CMakePackage, AutotoolsPackage, PythonExtension):
     variant("csharp", default=False, when="build_system=cmake", description="Build C# bindings")
     variant("perl", default=False, when="@:3.4", description="Build Perl bindings")
 
+    patch("gdal_3.13.3_llvm23_transitive_include.patch", when="@3.13: %llvm@23:")
+
     # Build system
     build_system(
         conditional("cmake", when="@3.5:"), conditional("autotools", when="@:3.5"), default="cmake"

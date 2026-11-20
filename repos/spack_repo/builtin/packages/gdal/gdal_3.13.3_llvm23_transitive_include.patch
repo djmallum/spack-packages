@@ -1,0 +1,49 @@
+diff --git a/port/cpl_vsil_curl.cpp b/port/cpl_vsil_curl.cpp
+index cfab843952..0a3b646050 100644
+--- a/port/cpl_vsil_curl.cpp
++++ b/port/cpl_vsil_curl.cpp
+@@ -22,6 +22,7 @@
+ #include <numeric>
+ #include <set>
+ #include <string_view>
++#include <cstdlib>
+ 
+ #include "cpl_aws.h"
+ #include "cpl_json.h"
+diff --git a/port/cpl_vsil_cache.cpp b/port/cpl_vsil_cache.cpp
+index c633204af2..2313f24d9b 100644
+--- a/port/cpl_vsil_cache.cpp
++++ b/port/cpl_vsil_cache.cpp
+@@ -22,6 +22,7 @@
+ #include <map>
+ #include <memory>
+ #include <utility>
++#include <cstdlib>
+ 
+ #include "cpl_conv.h"
+ #include "cpl_error.h"
+diff --git a/frmts/nitf/nitffile.cpp b/frmts/nitf/nitffile.cpp
+index dab70bc6a3..7789e03c65 100644
+--- a/frmts/nitf/nitffile.cpp
++++ b/frmts/nitf/nitffile.cpp
+@@ -20,6 +20,7 @@
+ #include <stdbool.h>
+ 
+ #include <algorithm>
++#include <cstdlib>
+ #include <map>
+ 
+ #ifdef EMBED_RESOURCE_FILES
+diff --git a/apps/gdalalg_raster_tile.h b/apps/gdalalg_raster_tile.h
+index 100640c1a3..fc6300dc47 100644
+--- a/apps/gdalalg_raster_tile.h
++++ b/apps/gdalalg_raster_tile.h
+@@ -18,6 +18,7 @@
+ #include "cpl_string.h"
+ 
+ #include <limits>
++#include <atomic>
+ 
+ //! @cond Doxygen_Suppress
+ 
+
