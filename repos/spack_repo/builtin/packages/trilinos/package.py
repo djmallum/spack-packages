@@ -667,7 +667,7 @@ class Trilinos(CMakePackage, CudaPackage, ROCmPackage):
     patch("13.4.1-kokkoskernel-patch2296.patch", when="@13.4.1 %oneapi@2025:")
 
     # https://github.com/kokkos/kokkos-kernels/pull/2296
-    patch("14-14.2-kokkoskernel-patch2296.patch", when="@14:15 %oneapi@2025:")
+    patch("14-15-kokkoskernel-patch2296.patch", when="@14:15")
 
     # https://github.com/trilinos/Trilinos/pull/11676
     patch("13.4.1-14-patch11676.patch", when="@13.4.1:14.0 %oneapi@2025:")
